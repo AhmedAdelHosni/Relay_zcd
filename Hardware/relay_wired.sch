@@ -4658,8 +4658,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </classes>
 <parts>
 <part name="K1" library="relay" deviceset="JJM1-12V" device=""/>
-<part name="D1" library="adafruit" deviceset="1N4004" device=""/>
-<part name="NO/NC" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM"/>
+<part name="D1" library="adafruit" deviceset="1N4004" device="" value="1N4007"/>
+<part name="NO/NC" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM" value="NO/NC"/>
 <part name="12V/BJT" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM"/>
 <part name="LOAD/L" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM"/>
 <part name="B1" library="rectifier" deviceset="DB?*G" device="DB10" technology="7"/>
