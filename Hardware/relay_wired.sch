@@ -3957,9 +3957,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="D1" library="adafruit" deviceset="1N4004" device="" value="1N4007"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/12" value="22k/1W"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/12" value="22k/1W"/>
-<part name="NO/LOAD" library="con-ptr500" deviceset="AK500/2" device=""/>
+<part name="NC/LOAD" library="con-ptr500" deviceset="AK500/2" device=""/>
 <part name="VEXT/BJT" library="con-ptr500" deviceset="AK500/2" device=""/>
-<part name="NC/NEUTRAL" library="con-ptr500" deviceset="AK500/2" device=""/>
+<part name="NO/NEUTRAL" library="con-ptr500" deviceset="AK500/2" device=""/>
 <part name="GND/S" library="con-ptr500" deviceset="AK500/2" device=""/>
 <part name="U$1" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
 <part name="OK1" library="optocoupler" deviceset="SFH620" device="A"/>
@@ -3969,18 +3969,24 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <plain>
 </plain>
 <instances>
-<instance part="D1" gate="1" x="43.18" y="73.66" rot="R90"/>
-<instance part="R1" gate="G$1" x="97.79" y="73.66"/>
-<instance part="R2" gate="G$1" x="97.79" y="68.58"/>
-<instance part="NO/LOAD" gate="-1" x="78.74" y="68.58" rot="R180"/>
-<instance part="NO/LOAD" gate="-2" x="83.82" y="55.88" rot="R90"/>
+<instance part="D1" gate="1" x="33.02" y="73.66" rot="R90"/>
+<instance part="R1" gate="G$1" x="97.79" y="73.66" smashed="yes">
+<attribute name="NAME" x="91.44" y="75.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.06" y="75.438" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="97.79" y="68.58" smashed="yes">
+<attribute name="NAME" x="91.44" y="70.0786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.06" y="70.358" size="1.778" layer="96"/>
+</instance>
+<instance part="NC/LOAD" gate="-1" x="68.58" y="68.58" rot="R180"/>
+<instance part="NC/LOAD" gate="-2" x="83.82" y="60.96" rot="R90"/>
 <instance part="VEXT/BJT" gate="-1" x="25.4" y="68.58"/>
 <instance part="VEXT/BJT" gate="-2" x="25.4" y="78.74"/>
-<instance part="NC/NEUTRAL" gate="-1" x="78.74" y="78.74" rot="R180"/>
-<instance part="NC/NEUTRAL" gate="-2" x="88.9" y="55.88" rot="R90"/>
+<instance part="NO/NEUTRAL" gate="-1" x="68.58" y="78.74" rot="R180"/>
+<instance part="NO/NEUTRAL" gate="-2" x="88.9" y="60.96" rot="R90"/>
 <instance part="GND/S" gate="-1" x="139.7" y="73.66" rot="R180"/>
 <instance part="GND/S" gate="-2" x="139.7" y="68.58" rot="R180"/>
-<instance part="U$1" gate="G$1" x="63.5" y="73.66"/>
+<instance part="U$1" gate="G$1" x="53.34" y="73.66"/>
 <instance part="OK1" gate="G$1" x="116.84" y="71.12"/>
 </instances>
 <busses>
@@ -3989,21 +3995,21 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <net name="N$1" class="0">
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="43.18" y1="76.2" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="76.2" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="COIL1"/>
-<wire x1="43.18" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="VEXT/BJT" gate="-2" pin="KL"/>
-<wire x1="30.48" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="SWCOMMON"/>
-<wire x1="71.12" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="NO/LOAD" gate="-2" pin="KL"/>
+<wire x1="60.96" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="NC/LOAD" gate="-2" pin="KL"/>
 <wire x1="83.82" y1="73.66" x2="92.71" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="60.96" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="66.04" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4023,26 +4029,26 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <net name="N$13" class="0">
 <segment>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="43.18" y1="71.12" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="71.12" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="COIL0"/>
-<wire x1="53.34" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="VEXT/BJT" gate="-1" pin="KL"/>
-<wire x1="43.18" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SWOPEN"/>
-<pinref part="NO/LOAD" gate="-1" pin="KL"/>
-<wire x1="71.12" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="NC/LOAD" gate="-1" pin="KL"/>
+<wire x1="60.96" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="NC/NEUTRAL" gate="-2" pin="KL"/>
+<pinref part="NO/NEUTRAL" gate="-2" pin="KL"/>
 <wire x1="92.71" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="68.58" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="68.58" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4062,8 +4068,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SWCLOSE"/>
-<pinref part="NC/NEUTRAL" gate="-1" pin="KL"/>
-<wire x1="71.12" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="NO/NEUTRAL" gate="-1" pin="KL"/>
+<wire x1="60.96" y1="78.74" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
