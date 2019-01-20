@@ -1,3 +1,6 @@
+UPDATE 20.01.2019:
+Replaced Replay with Omron G5Q-1-EU DC12
+
 UPDATE 19.12.2018:
 - Tested today the relay with Arduino UNO on pin 2 which is configured with PULL UP resistor. The circuit worked very good and the capacitor successfully reported only LOW as long as the AC light is ON, and HIGH as long as the AC is OFF. 
 
