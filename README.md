@@ -5,6 +5,7 @@ UPDATE 19.12.2018:
 - Tested today the relay with Arduino UNO on pin 2 which is configured with PULL UP resistor. The circuit worked very good and the capacitor successfully reported only LOW as long as the AC light is ON, and HIGH as long as the AC is OFF. 
 
 TODO: Test the circuit with long wiring more than 25 meters and put the capacitor near the controller itself and monitor the performance.
+The above TODO has been verified successfully 
 
 # Relay_zcd
 Relay circuit to control a relay and detect the status of the AC switch using SFH620A optocoupler. 
