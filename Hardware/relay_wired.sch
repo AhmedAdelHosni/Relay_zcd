@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5963,14 +5963,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/12" value="22k/1W"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/12" value="22k/1W"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/12" value="22k/2W"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/12" value="22k/2W"/>
 <part name="LOAD/NO" library="con-ptr500-modified" deviceset="AK500/2" device=""/>
 <part name="NEUTRAL/NC" library="con-ptr500-modified" deviceset="AK500/2" device=""/>
 <part name="GND/S" library="con-ptr500-modified" deviceset="AK500/2" device=""/>
 <part name="OK1" library="optocoupler" deviceset="SFH620" device="A"/>
 <part name="K1" library="relay" deviceset="G5SB" device="" value="G5Q-1-EU DC12"/>
-<part name="D1" library="diode" deviceset="DIODE-" device="D-7.5" value="1N4007"/>
+<part name="D1" library="diode" deviceset="DIODE-" device="D-5" value="1N4007"/>
 <part name="VEXT/BJT" library="con-ptr500-modified" deviceset="AK500/2" device=""/>
 </parts>
 <sheets>
