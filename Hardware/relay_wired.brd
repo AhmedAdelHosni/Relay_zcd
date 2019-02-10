@@ -155,9 +155,9 @@
 <hole x="21.56" y="32" drill="0.5"/>
 <hole x="5.96" y="32" drill="0.5"/>
 <wire x1="0.52" y1="27.5" x2="0.52" y2="25.22" width="0.254" layer="20"/>
-<wire x1="0.52" y1="25.22" x2="7.54" y2="25.22" width="0.254" layer="20"/>
-<wire x1="7.54" y1="25.22" x2="7.54" y2="27.5" width="0.254" layer="20"/>
-<wire x1="7.54" y1="27.5" x2="0.52" y2="27.5" width="0.254" layer="20"/>
+<wire x1="0.52" y1="25.22" x2="6.14" y2="25.21" width="0.254" layer="20"/>
+<wire x1="6.14" y1="25.21" x2="6.14" y2="27.49" width="0.254" layer="20"/>
+<wire x1="6.14" y1="27.49" x2="0.52" y2="27.5" width="0.254" layer="20"/>
 <wire x1="5.04" y1="22.93" x2="2.81" y2="20.95" width="0.254" layer="20"/>
 <wire x1="2.81" y1="20.95" x2="2.81" y2="3.6" width="0.254" layer="20"/>
 <wire x1="2.81" y1="3.6" x2="3.59" y2="2.82" width="0.254" layer="20"/>
@@ -189,6 +189,10 @@
 <wire x1="24.55" y1="20.57" x2="24.63" y2="20.65" width="0.254" layer="20"/>
 <wire x1="24.63" y1="20.65" x2="24.59" y2="21.38" width="0.254" layer="20"/>
 <wire x1="24.59" y1="21.38" x2="24.48" y2="21.49" width="0.254" layer="20"/>
+<wire x1="18.99" y1="27.55" x2="23.99" y2="27.55" width="0.254" layer="20"/>
+<wire x1="23.99" y1="27.55" x2="23.99" y2="25.32" width="0.254" layer="20"/>
+<wire x1="23.99" y1="25.32" x2="18.99" y2="25.32" width="0.254" layer="20"/>
+<wire x1="18.99" y1="25.32" x2="18.99" y2="27.55" width="0.254" layer="20"/>
 </plain>
 <libraries>
 <library name="optocoupler">
@@ -1654,7 +1658,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="22.3" y="26.426" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="NEUTRAL/NC" library="con-ptr500-modified" package="AK500/2" value="" x="2.249" y="26.462" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.625" y="30.811" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="6.565" y="31.591" size="0.8128" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="-3.466" y="31.542" size="1.778" layer="27" ratio="10" rot="R270"/>
 <attribute name="OC_NEWARK" value="unknown" x="2.249" y="26.462" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="2.249" y="26.462" size="1.778" layer="27" rot="R270" display="off"/>
